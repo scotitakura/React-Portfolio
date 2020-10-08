@@ -1,7 +1,7 @@
 import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav(props) {
+function Navigation(props) {
   const {
     categories = [],
     setCurrentCategory,
@@ -10,21 +10,11 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+      <nav className="nav-wrapper background-brown">
+        <a className="color-white font-large" href="/">
+        &nbsp;Scot Itakura
         </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About me
-            </a>
-          </li>
-          <li className="mx-2">
-            <span>Contact</span>
-          </li>
+        <ul id="nav-mobile" className="flex-row right">
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -36,15 +26,16 @@ function Nav(props) {
                 onClick={() => {
                   setCurrentCategory(category)
                 }}
-              >
+              >{category.name} &nbsp; &nbsp;
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
           ))}
         </ul>
       </nav>
+      <section className="hero" alt="Scot Itakura in front of a waterfall"><div></div></section>
     </header>
   );
 }
 
-export default Nav;
+export default Navigation;
