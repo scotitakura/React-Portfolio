@@ -10,7 +10,7 @@ function About() {
     <section>
       <h1>{currentCategory.name}</h1>
       <p className="font-med">I am a Geotechnical Engineering Technician 
-        & Earth Science B.S. graduate from the University
+        &amp; Earth Science B.S. graduate from the University
         or California, Santa Cruz. I have recently finished UC 
         Berkeley's full stack web development bootcamp and am 
         looking to pivot into front-end web development. I am 

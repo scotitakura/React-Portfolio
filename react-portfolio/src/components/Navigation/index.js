@@ -26,7 +26,7 @@ function Navigation(props) {
                 onClick={() => {
                   setCurrentCategory(category)
                 }}
-              >{category.name} &nbsp; &nbsp;
+              >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>

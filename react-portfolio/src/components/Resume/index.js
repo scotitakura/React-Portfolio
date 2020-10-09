@@ -22,26 +22,30 @@ function Resume() {
             </h5>
             <p className="right-align col">(2014-2018)</p>
           </div>
-          <dd>Earth Science, Bachelor of Science</dd>
+          <li>Earth Science, Bachelor of Science</li>
         </div>
-        <dl className="font-med">
+        <ul className="font-med">
             - Front-End Technical Skills
-          <dt>
-            <dd>HTML</dd>
-            <dd>CSS</dd>
-            <dd>JS</dd>
-            <dd>React</dd>
-            <dd>Handlebars</dd>
-          </dt>
+          <li>
+            <ul className="browser-default">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>React</li>
+              <li>Handlebars</li>
+            </ul>
+          </li>
             - Past Coding Experience
-          <dt>
-            <dd>MATLAB</dd>
-            <dd>Python</dd>
-            <dd>Scipy</dd>
-            <dd>GIS (ArcGIS)</dd>
-            <dd>Microsoft Excel</dd>
-          </dt>
-        </dl>
+          <li>
+            <ul>
+              <li>MATLAB</li>
+              <li>Python</li>
+              <li>Scipy</li>
+              <li>GIS (ArcGIS)</li>
+              <li>Microsoft Excel</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
   );
