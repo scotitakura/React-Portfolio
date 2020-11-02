@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.76544f99.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.be211ccc.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.be211ccc.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.266d4783.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.266d4783.js.map",
+    "static/js/2.3dd3c299.chunk.js": "/React-Portfolio/static/js/2.3dd3c299.chunk.js",
+    "static/js/2.3dd3c299.chunk.js.map": "/React-Portfolio/static/js/2.3dd3c299.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "precache-manifest.6e6aa809634a18b827fd9c5173710167.js": "/React-Portfolio/precache-manifest.6e6aa809634a18b827fd9c5173710167.js",
+    "service-worker.js": "/React-Portfolio/service-worker.js",
+    "static/css/main.76544f99.chunk.css.map": "/React-Portfolio/static/css/main.76544f99.chunk.css.map",
+    "static/js/2.3dd3c299.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.3dd3c299.chunk.js.LICENSE.txt",
+    "static/media/CosmopolitianTastes-img.PNG": "/React-Portfolio/static/media/CosmopolitianTastes-img.42c6198d.PNG",
+    "static/media/index.css": "/React-Portfolio/static/media/DSC02878.b535477d.JPG",
+    "static/media/QualitreesPreview.PNG": "/React-Portfolio/static/media/QualitreesPreview.7bd7af84.PNG",
+    "static/media/The-Craver.PNG": "/React-Portfolio/static/media/The-Craver.f0eea718.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.266d4783.js",
+    "static/js/2.3dd3c299.chunk.js",
+    "static/css/main.76544f99.chunk.css",
+    "static/js/main.be211ccc.chunk.js"
+  ]
+}
