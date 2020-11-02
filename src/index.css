@@ -21,7 +21,7 @@ code {
 
 * {
   color: var(--mainwhite);
-  background-color: var(--mainbrown);
+  background-color: var(--maingreen);
 }
 
 .color-green {
@@ -82,4 +82,25 @@ code {
 }
 .nav-items {
   padding: 0 30px 0 0;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.bump-down {
+  margin-top: 7px;
+}
+
+.text-small {
+  font-size: 80%;
+}
+
+.text-med {
+  font-size: 15px;
+}
+
+.image-size {
+  height: 150px;
+  width: 285px;
 }
