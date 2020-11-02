@@ -6,7 +6,7 @@ function Navigation(props) {
 
   return (
     <header className="flex-row px-1">
-      <nav className="nav-wrapper background-brown">
+      <nav className="nav-wrapper background-green">
         <a className="color-white font-large title" href="#">
           Scot Itakura
         </a>
@@ -30,7 +30,7 @@ function Navigation(props) {
             </li>
           ))}
         </ul>
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav background-green" id="mobile-demo">
           {categories.map((category) => (
             <li
               className={`mx-2 nav-items ${
@@ -51,7 +51,6 @@ function Navigation(props) {
         </ul>
       </nav>
       <section className="hero" alt="Scot Itakura in front of a waterfall">
-        <div></div>
       </section>
     </header>
   );
