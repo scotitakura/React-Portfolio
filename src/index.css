@@ -20,8 +20,8 @@ code {
 }
 
 * {
-  color: var(--mainwhite);
-  background-color: var(--maingreen);
+  color: var(--mainblue);
+  /* background-color: var(--maingreen); */
 }
 
 .color-green {
@@ -70,7 +70,7 @@ code {
   background-image: url("./assets/images/DSC02878.JPG");
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 101vh;
 }
 
 .cursor-pointer {
