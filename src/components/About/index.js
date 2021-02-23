@@ -1,5 +1,16 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import styled from "styled-components";
+
+const SSection = styled.section`  
+  background: rbga(255, 255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: black;
+  z-index: 0;
+  width: 40%;
+  padding: 0px;
+  margin: -650px 0 100px 100px;
+`
 
 function About() {
   const currentCategory = {
@@ -7,18 +18,21 @@ function About() {
     description: "About me page",
   };
   return (
-    <section className="container">
+    <SSection className="container">
       <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
       <p className="font-med">
-        I am a Geotechnical Engineering Technician &amp; Earth Science B.S.
-        graduate from the University or California, Santa Cruz. I have recently
-        finished UC Berkeley's full stack web development bootcamp and am
-        looking to pivot into front-end web development. I am eager to expand my
-        experience in the web development industry and contribute to the success
-        of a company.
+        Front-end web developer with a background in scientific data analytics and scientific coding 
+        programs as an Earth Science graduate from UC Santa Cruz. Recently certified 
+        through UC Berkeley’s Full-Stack Web Development program, employing my 
+        scientific program experience with MATLAB, Python, ArcGIS to become adept 
+        at web programs such as JavaScript, Node.js, React.js, etc. Successfully 
+        developed an interactive, responsive, and visually attractive web 
+        page for a business’s primary customer hub as a freelance web developer. 
+        Striving to create visually superb and enjoyably 
+        interactive web pages that are unique, memorable, and dependable.
       </p>
       <div className="flex-row"></div>
-    </section>
+    </SSection>
   );
 }
 
