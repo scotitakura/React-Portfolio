@@ -3,12 +3,12 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
 const SSection = styled.section`  
-  background: rbga(255, 255, 255, 255, 0.8);
-  border-radius: 10px;
-  color: black;
+  background: rgba(245, 245, 247, 0.6);
+  border-radius: 5px;
+  // text-align: center;
   z-index: 0;
-  width: 40%;
-  padding: 0px;
+  width: 50%;
+  padding: 5px 15px 5px 15px;
   margin: -650px 0 100px 100px;
 `
 
@@ -19,7 +19,7 @@ function About() {
   };
   return (
     <SSection className="container">
-      <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <h3>{capitalizeFirstLetter(currentCategory.name)}</h3>
       <p className="font-med">
         Front-end web developer with a background in scientific data analytics and scientific coding 
         programs as an Earth Science graduate from UC Santa Cruz. Recently certified 

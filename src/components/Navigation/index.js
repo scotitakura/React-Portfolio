@@ -1,9 +1,11 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import heroVideo from "../../assets/images/4k-video-hero.mp4"
 import About from "../About/index.js"
 import styled from "styled-components";
 
 const SHeader = styled.header`
+  display: flex;
   background-color: none;
 `
 const SNav = styled.nav`
@@ -11,7 +13,27 @@ const SNav = styled.nav`
 `
 
 const SHero = styled.section`
-  margin-top: -65px;
+  // margin-top: -65px;
+`
+
+const SContainer = styled.header`
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 -50%;
+`
+
+const SVideo = styled.video`
+
+  position: fixed;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  height: 100vh;
+  // width: 100vw;
 `
 
 function Navigation(props) {
@@ -41,10 +63,14 @@ function Navigation(props) {
           ))}
         </ul>
       </SNav>
+      <SContainer>
+        <SVideo autoPlay muted loop>
+          <source src={heroVideo} type="video/mp4"/>
+        </SVideo>
+      </SContainer>
       <SHero className="hero" alt="Scot Itakura in front of a waterfall">
       </SHero>
     </SHeader>
   );
 }
-
 export default Navigation;
