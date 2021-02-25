@@ -1,3 +1,7 @@
+html {
+  background-color: #fff
+}
+
 body {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
@@ -63,6 +67,14 @@ code {
 }
 .font-large {
   font-size: 300%;
+}
+
+.nav-icon {
+  /* padding: 0 7px 0 7px !important;
+  margin: 154px 0 0 40px !important; */
+  padding: 47px 15px 47px 15px !important;
+  margin: 40px 0 0 510px !important;
+  background-color: white;
 }
 
 .hero {

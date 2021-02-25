@@ -2,14 +2,15 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
-const SSection = styled.section`  
-  background: rgba(245, 245, 247, 0.6);
-  border-radius: 5px;
+const SSection = styled.section`
+  // position: fixed;
+  background: rgba(245, 245, 247, 0.5);
+  color: black;
+  // border-radius: 5px;
   // text-align: center;
-  z-index: 0;
   width: 50%;
-  padding: 5px 15px 5px 15px;
-  margin: -650px 0 100px 100px;
+  padding: 5px 30px 5px 30px;
+  margin: -600px 0 100px 100px;
 `
 
 function About() {
