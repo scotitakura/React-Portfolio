@@ -26,6 +26,7 @@ const SA = styled.div`
   position: fixed;
   background-color: white;
   color: black;
+  border-radius: 5px;
   font-size: 65px; 
   font-weight: bold;
   margin: 40px;
@@ -39,6 +40,7 @@ const SA = styled.div`
 const SLi = styled.li`
   background-color: white;
   color: black;
+  border-radius: 5px;
   font-size: 20px; 
   font-weight: bold;
   margin: 40px 40px 40px 0;

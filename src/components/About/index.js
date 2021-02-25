@@ -6,7 +6,7 @@ const SSection = styled.section`
   // position: fixed;
   background: rgba(245, 245, 247, 0.5);
   color: black;
-  // border-radius: 5px;
+  border-radius: 5px;
   // text-align: center;
   width: 50%;
   padding: 5px 30px 5px 30px;
