@@ -16,7 +16,7 @@ const TextBox = styled.p`
 
 function Body() {
   const [categories] = useState([
-    { name: "about", description: "About me page" },
+    // { name: "about", description: "About me page" },
     { name: "portfolio", description: "Portfolio page" },
     { name: "contact", description: "Contact me" },
     { name: "resume", description: "Resume page" },
@@ -32,7 +32,7 @@ function Body() {
         currentCategory={currentCategory}
       ></Navigation>
       <main>
-        {currentCategory.name === "about" && <About />}
+        {/* {currentCategory.name === "about" && <About />} */}
         {currentCategory.name === "portfolio" && <Portfolio />}
         {currentCategory.name === "contact" && <Contact />}
         {currentCategory.name === "resume" && <Resume />}

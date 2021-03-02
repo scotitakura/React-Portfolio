@@ -100,7 +100,7 @@ code {
 }
 
 .bump-down {
-  margin-top: 7px;
+  margin-top: 30px;
 }
 
 .text-small {
@@ -114,4 +114,8 @@ code {
 .image-size {
   height: 150px;
   width: 285px;
+}
+
+.word-wrap {
+  word-wrap: break-word;
 }
