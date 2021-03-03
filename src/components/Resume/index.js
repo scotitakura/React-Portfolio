@@ -1,5 +1,10 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import { capitalizeFirstLetter } from "../../utils/helpers";import styled from "styled-components";
+import px2vw from "../../utils/px2vw";
+
+const SSection = styled.h4`
+  color: white !important;
+`
 
 function Resume() {
   const currentCategory = { name: "resume", description: "Resume page" };
@@ -7,7 +12,7 @@ function Resume() {
     <section className="container">
       {/* <h3>{capitalizeFirstLetter(currentCategory.name)}</h3> */}
       <div>
-        <h4>Work Experience</h4>
+        <SSection>Work Experience</SSection>
         <div className="indent">
           <div className="row">
             <h5 className="col s9">Ability Now Bay Area</h5>

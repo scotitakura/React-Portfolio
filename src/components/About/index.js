@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const SSection = styled.section`
   // position: fixed;
-  background: rgba(245, 245, 247, 0.5);
+  // background: rgba(245, 245, 247, 0.5);
   color: black;
   border-radius: 5px;
   // text-align: center;

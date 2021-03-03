@@ -12,27 +12,27 @@ const SSection = styled.section`
   margin-top: -80vh;
 `
 const STitle = styled.div`
-  background: white;
-  color: black;
+  // color: white;
   border-radius: 5px;
-  width: 50%;
+  width: 400px;
   border-radius: 5px;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: bold;
-  margin: 40px 40px 40px 0;
+  margin: 20px 20px 0 0;
   padding: 15px 25px 15px 25px;
   text-align: center;
   mix-blend-mode: screen;
   z-index: -3;
 `
 const SCard = styled.div`
-  background: rgba(245, 245, 247, 0.5);
+  // background: rgba(245, 245, 247, 0.5);
   color: black;
+  // border-style: solid;
   border-radius: 5px;
   width: 40% !important;
   font-size: 20px; 
   font-weight: bold;
-  margin: 20px 20px 20px 0;
+  margin: 40px 40px 0 0;
   padding: 15px 25px 15px 25px;
   text-align: center;
   mix-blend-mode: screen;
@@ -109,7 +109,7 @@ function Portfolio() {
     description: "Portfolio page",
   };
   return (
-    <SSection className="container">
+    <SSection className="">
       <STitle>
         <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
         <p>A collection of my past and current projects.</p>  
