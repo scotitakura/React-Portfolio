@@ -18,7 +18,7 @@ const STitle = styled.div`
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 0 55px;
   padding: 15px 25px 15px 25px;
   text-align: center;
   mix-blend-mode: screen;
@@ -37,17 +37,12 @@ const SCard = styled.div`
   text-align: center;
   mix-blend-mode: screen;
   z-index: -1;
-
+  
   @media (max-width: 768px) {
     width: 70% !important;
   }
-
-  @media (min-width: 768px) {
-    width: 70% !important;
-  }
-
   @media (min-width: 1024px) {
-    width: 40% !important;
+    width: 35% !important;
   }
 `
 const SType = styled.p`
@@ -58,12 +53,6 @@ const SType = styled.p`
     width: 100%;
     margin: -10px 0 0 0
   }
-
-  @media (min-width: 768px) {
-    width: 100%;
-    margin: -10px 0 0 0
-  }
-
   @media (min-width: 1024px) {
     width: 35%;
     margin: -10px 0 0 15%
@@ -77,12 +66,6 @@ const SGithub = styled.div`
     width: 100%;
     margin: 10px 0 0 0;
   }
-
-  @media (min-width: 768px) {
-    width: 100%;
-    margin: 10px 0 0 0;
-  }
-
   @media (min-width: 1024px) {
     width: 35%;
     margin: 0 15% 0 0;
@@ -96,7 +79,6 @@ const SRow = styled.p`
     width: 100%;
     margin: -10px 0 0 0
   }
-
   @media (min-width: 1024px) {
     width: 35%;
     margin: -10px 0 0 15%

@@ -3,6 +3,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 import heroVideo from "../../assets/images/4k-video-hero.mp4"
 import heroImage from "../../assets/images/DSC02878.JPG"
 import About from "../About/index.js"
+import Footer from "../Footer/index.js";
 import styled from "styled-components";
 
 const SVideoContainer = styled.video`
@@ -76,14 +77,6 @@ const SVideo = styled.video`
   height: 150%;
   min-width: 100%;
   min-height: 100%;
-  @media (min-width: 600px) {
-    height: 101%;
-    margin: 0 0 0 -10%;
-  }
-  @media (min-width: 768px) {
-    height: 101%;
-    margin: 0 0 0 0;
-  }
   @media (max-width: 250px) {
     height: 130%;
     margin: 60% 0 0 -70%;
@@ -104,6 +97,19 @@ const SVideo = styled.video`
     height: 120%;
     margin: 0 0 0 -15%;
   }
+  @media (min-width: 600px) {
+    height: 101%;
+    margin: 0 0 0 -10%;
+  }
+  @media (min-width: 768px) {
+    height: 101%;
+    margin: 0 0 0 0;
+  }
+  @media (min-width: 1000px) {
+    height: auto;
+    width: 101%;
+    margin: 0 0 0 0;
+  }
 `
 
 function Navigation(props) {
@@ -120,6 +126,7 @@ function Navigation(props) {
               <SNavColor className="cursor-pointer" onClick={() => {setCurrentCategory(category);}} >
                 {capitalizeFirstLetter(category.name)}
               </SNavColor>
+              <Footer></Footer>
             </SLi>
           ))}
         </ul>
@@ -129,6 +136,7 @@ function Navigation(props) {
               <SNavColor className="cursor-pointer" onClick={() => { setCurrentCategory(category); }} >
                 {capitalizeFirstLetter(category.name)}
               </SNavColor>
+              <Footer></Footer>
             </SMLi>
           ))}
         </ul>

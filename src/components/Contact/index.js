@@ -1,5 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import Footer from "../Footer/index.js";
+import styled from "styled-components";
+
+const SFooter = styled.footer`
+  background-color: transparent;
+`
+
+const SDiv = styled.div`
+  padding: 0 0 0 0;
+`
+
+const SColumn = styled.div`
+  position: absolute;
+  margin: -140px 0 0 400px;
+`
 
 function Contact() {
   const [btnClass, setBtnClass] = useState("btn disabled");
@@ -28,6 +43,26 @@ function Contact() {
   return (
     <section className="container">
       <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <SFooter>
+        <SColumn className="right-align">
+          <SDiv className="row">
+            <a
+              className="btn-floating social github background-blue"
+              href="https://github.com/scotitakura"
+            >
+              <i className="fa fa-github background-blue"></i>
+            </a>
+          </SDiv>
+          <SDiv className="row">
+            <a
+              className="btn-floating social linkedin background-blue"
+              href="https://www.linkedin.com/in/scot-itakura-289376157/"
+            >
+              <i className="fa fa-linkedin background-blue"></i>
+            </a>
+          </SDiv>
+        </SColumn>
+      </SFooter>
       <div className="row">
         <div className="input-field col s12">
           <input

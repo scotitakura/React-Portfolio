@@ -6,17 +6,18 @@ const SFooter = styled.footer`
 `
 
 const SDiv = styled.div`
-  padding: 50px 30px 0px 40px;
+  padding: 0 30px 30px 0;
 `
 
 const SColumn = styled.div`
-  margin-top: -90vh;
+  position: fixed;
+  margin-top: -900px;
 `
 
 function Footer() {
   return (
     <SFooter>
-      <SColumn className="left-align">
+      <SColumn className="right-align">
         <SDiv className="column">
           <a
             className="btn-floating social github background-blue"
