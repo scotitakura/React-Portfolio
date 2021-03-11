@@ -29,7 +29,7 @@ const SCard = styled.div`
   color: black;
   // border-style: solid;
   border-radius: 5px;
-  width: 40% !important;
+  width: 44% !important;
   font-size: 20px; 
   font-weight: bold;
   margin: 40px 40px 0 0;
@@ -39,7 +39,7 @@ const SCard = styled.div`
   z-index: -1;
   
   @media (max-width: 768px) {
-    width: 70% !important;
+    width: 76% !important;
   }
   @media (min-width: 1024px) {
     width: 35% !important;
@@ -110,7 +110,7 @@ function Portfolio() {
                 </a>
               </SGithub>
             </div>
-            <img className="image-size" src={garage} alt="Qualitrees Web Page" />
+            <img className="image-size" src={garage} alt="Garage Collage Web Page" />
           </SCard>
 
           <SCard className="col s12 m6">
@@ -142,7 +142,7 @@ function Portfolio() {
                 </a>
               </SGithub>
             </div>
-            <img className="image-size" src={craver} alt="Qualitrees Web Page" />
+            <img className="image-size" src={craver} alt="Cosmopolitan Tastes Web Page" />
           </SCard>
 
           <SCard className="col s12 m6">
@@ -158,7 +158,7 @@ function Portfolio() {
                 </a>
               </SGithub>
             </div>
-            <img className="image-size" src={cosmo} alt="Qualitrees Web Page" />
+            <img className="image-size" src={cosmo} alt="The Craver Web Page" />
           </SCard>
         </div>
     </SSection>

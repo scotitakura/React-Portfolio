@@ -49,6 +49,11 @@ const SMLi = styled.li`
   z-index: 2;
 `
 
+const SAIcon = styled.a`
+  padding: 15px 10px 15px 10px !important;
+  height: auto !important;
+`
+
 const SNav = styled.nav`
   background-color: transparent;
   box-shadow: none !important;
@@ -102,12 +107,12 @@ const SVideo = styled.video`
     margin: 0 0 0 -10%;
   }
   @media (min-width: 768px) {
-    height: 101%;
+    height: 115%;
     margin: 0 0 0 0;
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1130px) {
     height: auto;
-    width: 101%;
+    width: 115%;
     margin: 0 0 0 0;
   }
 `
@@ -119,7 +124,7 @@ function Navigation(props) {
     <SHeader className="flex-row px-1">
       <SNav className="nav-wrapper">
         <SA className="" href="#">Scot Itakura</SA>
-        <a href="#" data-target="mobile-demo" className="valign-wrapper sidenav-trigger nav-icon"><i class="material-icons nav-icon-button">menu</i></a>
+        <SAIcon href="#" data-target="mobile-demo" className="valign-wrapper sidenav-trigger nav-icon"><i class="material-icons nav-icon-button">menu</i></SAIcon>
         <ul id="nav-mobile" className="flex-row hide-on-med-and-down right">
           {categories.map((category) => (
             <SLi className={`mx-2 nav-items ${ currentCategory.name === category.name && "navActive" }`} key={category.name} >

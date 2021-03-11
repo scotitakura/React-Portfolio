@@ -2,15 +2,29 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
+const STitle = styled.div`
+  // color: white;
+  border-radius: 5px;
+  width: 400px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: -30px 0 0 -50px;
+  // padding: 15px 25px 15px 25px;
+  text-align: center;
+  mix-blend-mode: screen;
+  z-index: -3;
+`
+
 const SSection = styled.section`
-  // position: fixed;
+  position: absolute;
   // background: rgba(245, 245, 247, 0.5);
   color: black;
   border-radius: 5px;
   // text-align: center;
   width: 50%;
   padding: 5px 30px 5px 30px;
-  margin: -600px 0 100px 100px;
+  margin: -70vh 0 0 100px;
 `
 
 function About() {
@@ -20,7 +34,9 @@ function About() {
   };
   return (
     <SSection className="container">
-      <h3>{capitalizeFirstLetter(currentCategory.name)}</h3>
+      <STitle>
+        <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+      </STitle>
       <p className="font-med">
         Front-end web developer with a background in scientific data analytics and scientific coding 
         programs as an Earth Science graduate from UC Santa Cruz. Recently certified 

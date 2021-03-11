@@ -71,9 +71,20 @@ code {
 
 .nav-icon {
   padding: 47px 15px 47px 15px !important;
-  margin: 40px 0 0 510px !important;
+  margin: 40px 40px 0 510px !important;
   background-color: white;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 590px) {
+  .nav-icon {
+    margin: 40px 40px 0 85% !important;
+  }
+}
+@media only screen and (max-width: 529px) {
+  .nav-icon {
+    margin: 220px 0 0 40px !important;
+  }
 }
 
 .nav-icon-button {
@@ -121,4 +132,31 @@ code {
 
 .word-wrap {
   word-wrap: break-word;
+}
+
+@media only screen and (min-width: 601px) {
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: auto !important;
+    line-height: auto !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+.hide-on-med-and-down {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1208px) {
+.hide-on-med-and-down {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+nav a.sidenav-trigger {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1209px) {
+nav a.sidenav-trigger {
+    display: none;
+  }
 }
