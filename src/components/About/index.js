@@ -25,6 +25,13 @@ const SSection = styled.section`
   width: 50%;
   padding: 5px 30px 5px 30px;
   margin: -70vh 0 0 100px;
+  @media (max-width: 530px) {
+    margin: -60vh 0 0 20px;
+    width: 70%;
+  }
+  @media (min-width: 530px) {
+    margin: -75vh 0 0 100px;
+  }
 `
 
 function About() {

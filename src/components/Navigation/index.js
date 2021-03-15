@@ -84,31 +84,31 @@ const SVideo = styled.video`
   min-height: 100%;
   @media (max-width: 250px) {
     height: 130%;
-    margin: 60% 0 0 -70%;
+    margin: 30% 0 0 -100%;
   }
   @media (min-width: 250px) {
     height: 130%;
-    margin: 30% 0 0 -40%;
+    margin: 15% 0 0 -60%;
   }
   @media (min-width: 350px) {
     height: 130%;
-    margin: 20% 0 0 -30%;
+    margin: 0 0 0 -55%;
   }
   @media (min-width: 450px) {
     height: 130%;
-    margin: 10% 0 -10% -20%;
+    margin: 0 0 0 -40%;
   }
   @media (min-width: 560px) {
     height: 120%;
-    margin: 0 0 0 -15%;
+    margin: 0 0 0 -25%;
   }
   @media (min-width: 600px) {
     height: 101%;
-    margin: 0 0 0 -10%;
+    margin: 0 0 0 -20%;
   }
   @media (min-width: 768px) {
     height: 115%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 -10%;
   }
   @media (min-width: 1130px) {
     height: auto;

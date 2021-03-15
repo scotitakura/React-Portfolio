@@ -23,6 +23,12 @@ const STitle = styled.div`
   text-align: center;
   mix-blend-mode: screen;
   z-index: -3;
+  @media (max-width: 530px) {
+    margin: 130px 20px 0 10px;
+  }
+  @media (min-width: 530px) {
+    margin: 20px 20px 0 55px;
+  }
 `
 const SCard = styled.div`
   // background: rgba(245, 245, 247, 0.5);
