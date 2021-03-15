@@ -6,7 +6,6 @@ import craver from "../../assets/images/The-Craver.PNG";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 import styled from "styled-components";
-import px2vw from "../../utils/px2vw";
 
 const SSection = styled.section`
   margin-top: -80vh;
@@ -31,9 +30,7 @@ const STitle = styled.div`
   }
 `
 const SCard = styled.div`
-  // background: rgba(245, 245, 247, 0.5);
   color: black;
-  // border-style: solid;
   border-radius: 5px;
   width: 44% !important;
   font-size: 20px; 
@@ -52,8 +49,8 @@ const SCard = styled.div`
   }
 `
 const SType = styled.p`
-  width: 35%;
-  margin: 0 15% 0 0;
+  width: 25%;
+  margin: 0 15% 0 15%;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -65,7 +62,7 @@ const SType = styled.p`
   }
 `
 const SGithub = styled.div`
-  width: 35%;
+  width: 25%;
   margin: 0 15% 0 0;
 
   @media (max-width: 768px) {
@@ -75,19 +72,6 @@ const SGithub = styled.div`
   @media (min-width: 1024px) {
     width: 35%;
     margin: 0 15% 0 0;
-  }
-`
-const SRow = styled.p`
-  width: 35%;
-  margin: 0 15% 0 0;
-
-  @media (min-width: 768px) {
-    width: 100%;
-    margin: -10px 0 0 0
-  }
-  @media (min-width: 1024px) {
-    width: 35%;
-    margin: -10px 0 0 15%
   }
 `
 

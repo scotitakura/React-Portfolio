@@ -34,6 +34,10 @@ const SColumn = styled.div`
   }
 `;
 
+const SLabel = styled.label`
+  font-size: 17px;
+`
+
 function Contact() {
   const [btnClass, setBtnClass] = useState("btn disabled");
   const [name, setName] = useState("");
@@ -94,11 +98,11 @@ function Contact() {
       </SFooter>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
-        <label className="color-white">Name</label>
+        <SLabel className="color-white">Name</SLabel>
         <input type="text" name="user_name" />
-        <label className="color-white">Email</label>
+        <SLabel className="color-white">Email</SLabel>
         <input type="email" name="user_email" />
-        <label className="color-white">Message</label>
+        <SLabel className="color-white">Message</SLabel>
         <textarea name="message" />
         <input className="btn color-white background-blue" type="submit" value="Send" />
       </form>

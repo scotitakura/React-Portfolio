@@ -5,14 +5,6 @@ import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 import Resume from "../Resume";
-import styled from "styled-components";
-
-const TextBox = styled.p`
-  display: flex;
-  background-size: 70vh;
-  height: 100%;
-  width: 100%;
-`
 
 function Body() {
   const [categories] = useState([

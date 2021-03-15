@@ -138,7 +138,7 @@ function Navigation(props) {
         <ul class="sidenav" id="mobile-demo">
           {categories.map((category) => (
             <SMLi className={`mx-2 nav-items ${ currentCategory.name === category.name && "navActive" }`} key={category.name} >
-              <SNavColor className="cursor-pointer" onClick={() => { setCurrentCategory(category); }} >
+              <SNavColor className="sidenav-close cursor-pointer" onClick={() => { setCurrentCategory(category); }} >
                 {capitalizeFirstLetter(category.name)}
               </SNavColor>
               <Footer></Footer>

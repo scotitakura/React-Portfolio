@@ -22,7 +22,7 @@ function Resume() {
       <div>
         <div className="row">
           <h4 className="col">Work Experience</h4>
-          <a className="col hov" href={resume} target="_blank">
+          <a className="col s1" href={resume} target="_blank">
             <i class="material-icons">picture_as_pdf</i>
           </a>
         </div>
@@ -102,6 +102,7 @@ function Resume() {
                 <li>Bootstrap</li>
                 <li>Handlebars.js</li>
               </ul>
+              &nbsp;
             </li>
             Bachelor of Science Coding Programs
             <li>
