@@ -8,11 +8,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "emailjs-com": "^2.6.4",
     "materialize-css": "^1.0.0-rc.2",
     "materialize-social": "^1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^4.0.3",
     "styled-components": "^5.2.1"
   },
   "scripts": {

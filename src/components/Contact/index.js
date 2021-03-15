@@ -8,7 +8,8 @@ import styled from "styled-components";
 init("user_1TsQ5BV4LDT1zGE1UQFcc");
 
 const SSection = styled.section`
-  margin-top: -70vh;
+  margin: -70vh 0 0 10%;
+  width: 50%;
 `;
 
 const SFooter = styled.footer`
@@ -22,11 +23,14 @@ const SDiv = styled.div`
 const SColumn = styled.div`
   position: absolute;
   margin: -73px 0 0 110px;
+  @media (max-width: 697px) {
+    margin: -73px 0 0 110px;
+  }
   @media (min-width: 697px) {
-    margin: -73px 0 0 360px;
+    margin: -73px 0 0 380px;
   }
   @media (min-width: 768px) {
-    margin: -73px 0 0 360px;
+    margin: -73px 0 0 380px;
   }
 `;
 
@@ -53,10 +57,11 @@ function Contact() {
     name: "contact me",
     description: "Contact me page",
   };
+  
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_5wt7xqc', 'template_4sin1m8', e.target, 'user_1TsQ5BV4LDT1zGE1UQFcc')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -89,51 +94,14 @@ function Contact() {
       </SFooter>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
-        <label>Name</label>
+        <label className="color-white">Name</label>
         <input type="text" name="user_name" />
-        <label>Email</label>
+        <label className="color-white">Email</label>
         <input type="email" name="user_email" />
-        <label>Message</label>
+        <label className="color-white">Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" />
+        <input className="btn color-white background-blue" type="submit" value="Send" />
       </form>
-      {/* <div className="row">
-        <div className="input-field col s12">
-          <input
-            id="name"
-            value={name}
-            type="text"
-            className="validate"
-            required
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label htmlFor="name">Name</label>
-        </div>
-        <div className="input-field col s12">
-          <input
-            id="email"
-            value={email}
-            type="email"
-            className="validate"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label htmlFor="email">Email</label>
-        </div>
-        <div className="input-field col s12">
-          <textarea
-            id="textarea1"
-            value={contents}
-            className="materialize-textarea validate"
-            required
-            onChange={(e) => setContents(e.target.value)}
-          />
-          <label htmlFor="textarea1">Contents</label>
-        </div>
-      </div>
-      <a className={btnClass} onClick={() => handleClick()}>
-        Button
-      </a> */}
     </SSection>
   );
 }
