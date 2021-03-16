@@ -2,36 +2,43 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
-const STitle = styled.div`
-  // color: white;
-  border-radius: 5px;
-  width: 400px;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: -30px 0 0 -50px;
-  // padding: 15px 25px 15px 25px;
-  text-align: center;
-  mix-blend-mode: screen;
-  z-index: -3;
-`
-
 const SSection = styled.section`
-  position: absolute;
-  // background: rgba(245, 245, 247, 0.5);
-  color: black;
-  border-radius: 5px;
-  // text-align: center;
+  margin: -70vh 0 0 10%;
   width: 50%;
+  position: absolute;
   padding: 5px 30px 5px 30px;
-  margin: -70vh 0 0 100px;
+  @media (max-width: 700px) {
+    width: 70%;
+  }
   @media (max-width: 530px) {
     margin: -60vh 0 0 20px;
     width: 70%;
   }
-  @media (min-width: 530px) {
-    margin: -75vh 0 0 100px;
+  @media (max-height: 500px) {
+    margin-top: -55vh;
   }
+  @media (max-height: 450px) {
+    margin-top: -50vh;
+  }
+  @media (max-height: 400px) {
+    margin-top: -45vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -40vh;
+    width: 80%
+  }
+  @media (max-height: 300px) {
+    margin-top: -35vh;
+    width: 80%
+  }
+`
+
+const STitle = styled.div`
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: -30px 0 0 0;
+  text-align: left;
 `
 
 function About() {

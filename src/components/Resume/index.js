@@ -4,6 +4,30 @@ import resume from "../../assets/images/resume.pdf"
 
 const SSection = styled.section`
   margin-top: -70vh;
+  @media (max-height: 650px) {
+    margin-top: -70vh;
+  }
+  @media (max-height: 600px) {
+    margin-top: -65vh;
+  }
+  @media (max-height: 550px) {
+    margin-top: -60vh;
+  }
+  @media (max-height: 500px) {
+    margin-top: -55vh;
+  }
+  @media (max-height: 450px) {
+    margin-top: -50vh;
+  }
+  @media (max-height: 400px) {
+    margin-top: -45vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -40vh;
+  }
+  @media (max-height: 300px) {
+    margin-top: -35vh;
+  }
 `;
 
 const SLi = styled.li`

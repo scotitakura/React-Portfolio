@@ -1,8 +1,7 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import heroVideo from "../../assets/images/4k-video-hero.mp4"
-import heroImage from "../../assets/images/DSC02878.JPG"
-import About from "../About/index.js"
+import heroPoster from "../../assets/images/hero-poster.jpg"
 import Footer from "../Footer/index.js";
 import styled from "styled-components";
 
@@ -11,7 +10,6 @@ const SVideoContainer = styled.video`
   position: relative;
   height: 300px;
 `
-
 const SA = styled.div`
   position: fixed;
   background-color: white;
@@ -78,42 +76,16 @@ const SContainer = styled.header`
 `
 const SVideo = styled.video`
   position: fixed;
-  z-index: -2;
-  height: 150%;
-  min-width: 100%;
-  min-height: 100%;
-  @media (max-width: 250px) {
-    height: 130%;
-    margin: 30% 0 0 -100%;
-  }
-  @media (min-width: 250px) {
-    height: 130%;
-    margin: 15% 0 0 -60%;
-  }
-  @media (min-width: 350px) {
-    height: 130%;
-    margin: 0 0 0 -55%;
-  }
-  @media (min-width: 450px) {
-    height: 130%;
-    margin: 0 0 0 -40%;
-  }
-  @media (min-width: 560px) {
-    height: 120%;
-    margin: 0 0 0 -25%;
-  }
-  @media (min-width: 600px) {
-    height: 101%;
-    margin: 0 0 0 -20%;
-  }
-  @media (min-width: 768px) {
-    height: 115%;
-    margin: 0 0 0 -10%;
-  }
-  @media (min-width: 1130px) {
+  z-index: -3;
+  width: 101%;
+  height: auto;
+  @media (min-aspect-ratio: 202/135) {
+    width: 101%;
     height: auto;
-    width: 115%;
-    margin: 0 0 0 0;
+  }
+  @media (max-aspect-ratio: 202/135) {
+    width: auto;
+    height: 101%;
   }
 `
 
@@ -141,13 +113,12 @@ function Navigation(props) {
               <SNavColor className="sidenav-close cursor-pointer" onClick={() => { setCurrentCategory(category); }} >
                 {capitalizeFirstLetter(category.name)}
               </SNavColor>
-              <Footer></Footer>
             </SMLi>
           ))}
         </ul>
       </SNav>
       <SContainer>
-        <SVideo autoPlay muted loop>
+        <SVideo poster={heroPoster} autoPlay muted loop>
           <source src={heroVideo} type="video/mp4"/>
         </SVideo>
       </SContainer>
