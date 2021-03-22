@@ -1,33 +1,68 @@
 import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
-import resume from "../../assets/images/resume.pdf"
+import resume from "../../assets/images/Scot-Itakura's-Resume.pdf";
+
+const STitle = styled.div`
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: -30px 0 0 0;
+  text-align: left;
+`
 
 const SSection = styled.section`
-  margin-top: -70vh;
-  @media (max-height: 650px) {
-    margin-top: -70vh;
-  }
-  @media (max-height: 600px) {
-    margin-top: -65vh;
-  }
-  @media (max-height: 550px) {
-    margin-top: -60vh;
-  }
-  @media (max-height: 500px) {
-    margin-top: -55vh;
-  }
-  @media (max-height: 450px) {
-    margin-top: -50vh;
-  }
-  @media (max-height: 400px) {
-    margin-top: -45vh;
-  }
-  @media (max-height: 350px) {
-    margin-top: -40vh;
-  }
-  @media (max-height: 300px) {
-    margin-top: -35vh;
-  }
+margin: -70vh 0 0 8%;
+position: absolute;
+padding: 5px 30px 5px 30px;
+@media (max-width: 700px) {
+  width: 70%;
+}
+@media (max-width: 530px) {
+  margin: -60vh 0 0 20px;
+  width: 70%;
+}
+@media (max-height: 500px) {
+  margin-top: -55vh;
+}
+@media (max-height: 450px) {
+  margin-top: -50vh;
+}
+@media (max-height: 400px) {
+  margin-top: -45vh;
+}
+@media (max-height: 350px) {
+  margin-top: -40vh;
+  width: 80%
+}
+@media (max-height: 300px) {
+  margin-top: -35vh;
+  width: 80%
+}
+  // @media (max-height: 650px) {
+  //   margin-top: -70vh;
+  // }
+  // @media (max-height: 600px) {
+  //   margin-top: -65vh;
+  // }
+  // @media (max-height: 550px) {
+  //   margin-top: -60vh;
+  // }
+  // @media (max-height: 500px) {
+  //   margin-top: -55vh;
+  // }
+  // @media (max-height: 450px) {
+  //   margin-top: -50vh;
+  // }
+  // @media (max-height: 400px) {
+  //   margin-top: -45vh;
+  // }
+  // @media (max-height: 350px) {
+  //   margin-top: -40vh;
+  // }
+  // @media (max-height: 300px) {
+  //   margin-top: -35vh;
+  // }
 `;
 
 const SLi = styled.li`
@@ -42,14 +77,14 @@ function Resume() {
   const currentCategory = { name: "resume", description: "Resume page" };
   return (
     <SSection className="container">
-      {/* <h3>{capitalizeFirstLetter(currentCategory.name)}</h3> */}
+      <STitle className="row">
+        <h1 className="col">{capitalizeFirstLetter(currentCategory.name)}</h1>
+        <a className="col s1" href={resume} target="_blank" rel="noreferrer">
+          <i class="material-icons">picture_as_pdf</i>
+        </a>
+      </STitle>
       <div>
-        <div className="row">
-          <h4 className="col">Work Experience</h4>
-          <a className="col s1" href={resume} target="_blank">
-            <i class="material-icons">picture_as_pdf</i>
-          </a>
-        </div>
+        <h4>Work Experience</h4>
         <div className="indent">
           <div className="row">
             <h5 className="col s9">Comunity Integration Assistant</h5>

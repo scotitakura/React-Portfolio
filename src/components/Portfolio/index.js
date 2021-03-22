@@ -11,6 +11,15 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 import styled from "styled-components";
 
+const STitle = styled.div`
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 27px 0 0 5%;
+  padding: 15px 25px 15px 25px;
+  text-align: center;
+  z-index: -3;
+`;
 const SSection = styled.section`
   margin-top: -80vh;
   @media (max-height: 500px) {
@@ -28,15 +37,6 @@ const SSection = styled.section`
   @media (max-height: 300px) {
     margin-top: -50vh;
   }
-`;
-const STitle = styled.div`
-  width: 400px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 27px 0 0 5%;
-  padding: 15px 25px 15px 25px;
-  text-align: center;
-  z-index: -3;
 `;
 const SP = styled.p`
   font-size: 22px;
@@ -115,12 +115,13 @@ function Portfolio() {
                 className="btn-floating social github background-blue"
                 href="https://github.com/jennifermulder/garage-endeavor"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-github background-blue"></i>
               </a>
             </SGithub>
           </div>
-          <a href="https://garage-collage-2468.herokuapp.com/" target="_blank">
+          <a href="https://garage-collage-2468.herokuapp.com/" target="_blank" rel="noreferrer">
             <SVideo poster={garagePoster} autoPlay muted loop>
               <source src={garagePreview} type="video/mp4" />
             </SVideo>
@@ -136,12 +137,13 @@ function Portfolio() {
                 className="btn-floating social github background-blue"
                 href="https://github.com/scotitakura/QualiTreesWeb"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-github background-blue"></i>
               </a>
             </SGithub>
           </div>
-          <a href="https://qualitrees-503dd.web.app/" target="_blank">
+          <a href="https://qualitrees-503dd.web.app/" target="_blank" rel="noreferrer">
             <SVideo poster={qualitreesPoster} autoPlay muted loop>
               <source src={qualitreesPreview} type="video/mp4" />
             </SVideo>
@@ -157,12 +159,13 @@ function Portfolio() {
                 className="btn-floating social github background-blue"
                 href="https://github.com/TheresaRutledge/CosmopolitanTastes"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-github background-blue"></i>
               </a>
             </SGithub>
           </div>
-          <a href="http://cosmopolitan-tastes.herokuapp.com/" target="_blank">
+          <a href="http://cosmopolitan-tastes.herokuapp.com/" target="_blank" rel="noreferrer">
             <SVideo poster={cosmoPoster} autoPlay muted loop>
               <source src={cosmoPreview} type="video/mp4" />
             </SVideo>
@@ -178,6 +181,7 @@ function Portfolio() {
                 className="btn-floating social github background-blue"
                 href="https://github.com/scotitakura/fun-challenge-project"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-github background-blue"></i>
               </a>
@@ -186,6 +190,7 @@ function Portfolio() {
           <a
             href="https://ngdino.github.io/fun-challenge-project/"
             target="_blank"
+            rel="noreferrer"
           >
             <SVideo poster={cravePoster} autoPlay muted loop>
               <source src={cravePreview} type="video/mp4" />

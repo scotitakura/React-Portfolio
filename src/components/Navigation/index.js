@@ -5,11 +5,11 @@ import heroPoster from "../../assets/images/hero-poster.jpg"
 import Footer from "../Footer/index.js";
 import styled from "styled-components";
 
-const SVideoContainer = styled.video`
-  background-size: cover;
-  position: relative;
-  height: 300px;
-`
+// const SVideoContainer = styled.video`
+//   background-size: cover;
+//   position: relative;
+//   height: 300px;
+// `
 const SA = styled.div`
   position: fixed;
   background-color: white;
@@ -24,7 +24,6 @@ const SA = styled.div`
   mix-blend-mode: screen;
   z-index: -1;
 `
-
 const SLi = styled.li`
   background-color: white;
   border-radius: 5px;
@@ -36,7 +35,6 @@ const SLi = styled.li`
   mix-blend-mode: screen;
   z-index: -3;
 `
-
 const SMLi = styled.li`
   background-color: white;
   font-size: 20px; 
@@ -46,12 +44,10 @@ const SMLi = styled.li`
   text-align: center;
   z-index: 2;
 `
-
 const SAIcon = styled.a`
   padding: 15px 10px 15px 10px !important;
   height: auto !important;
 `
-
 const SNav = styled.nav`
   background-color: transparent;
   box-shadow: none !important;
@@ -65,7 +61,7 @@ const SHeader = styled.header`
   background-color: none;
 `
 const SHero = styled.section`
-background-color: transparent;
+  background-color: transparent;
 `
 const SContainer = styled.header`
   display: flex;

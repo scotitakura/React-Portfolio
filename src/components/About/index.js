@@ -2,6 +2,13 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
+const STitle = styled.div`
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: -30px 0 0 0;
+  text-align: left;
+`
 const SSection = styled.section`
   margin: -70vh 0 0 10%;
   width: 50%;
@@ -12,7 +19,7 @@ const SSection = styled.section`
   }
   @media (max-width: 530px) {
     margin: -60vh 0 0 20px;
-    width: 70%;
+    width: 100%;
   }
   @media (max-height: 500px) {
     margin-top: -55vh;
@@ -31,14 +38,6 @@ const SSection = styled.section`
     margin-top: -35vh;
     width: 80%
   }
-`
-
-const STitle = styled.div`
-  width: 400px;
-  font-size: 20px;
-  font-weight: bold;
-  margin: -30px 0 0 0;
-  text-align: left;
 `
 
 function About() {

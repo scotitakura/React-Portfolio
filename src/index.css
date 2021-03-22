@@ -4,17 +4,15 @@ html {
 
 body {
   margin: 0;
-  /* font-family: 'Libre Baskerville', serif; */
-  
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace; */
-}
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
 
 :root {
   --maingreen: #42622d;
@@ -73,19 +71,20 @@ code {
 
 .nav-icon {
   padding: 47px 15px 47px 15px !important;
-  margin: 40px 40px 0 510px !important;
+  margin: 40px 40px 0 490px !important;
   background-color: white;
   border-radius: 5px;
 }
 
 @media only screen and (max-width: 590px) {
   .nav-icon {
-    margin: 40px 40px 0 85% !important;
+    margin: 40px 40px 0 88% !important;
   }
 }
-@media only screen and (max-width: 529px) {
+@media only screen and (max-width: 492px) {
   .nav-icon {
-    margin: 41px 0 0 75% !important;
+    position: absolute;
+    margin: 41px 0 0 400px !important;
   }
 }
 
