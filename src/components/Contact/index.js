@@ -34,17 +34,17 @@ const SDiv = styled.div`
 const SColumn = styled.div`
   position: absolute;
   margin: -73px 0 0 110px;
-  @media (max-width: 697px) {
+  @media (max-width: 640px) {
     margin: -73px 0 0 110px;
   }
-  @media (min-width: 697px) {
-    margin: -73px 0 0 380px;
+  @media (min-width: 640px) {
+    margin: -73px 0 0 340px;
   }
   @media (min-width: 768px) {
-    margin: -73px 0 0 380px;
+    margin: -73px 0 0 340px;
   }
   @media (min-width: 1200px) {
-    margin: -76px 0 0 380px;
+    margin: -76px 0 0 340px;
   }
 `;
 

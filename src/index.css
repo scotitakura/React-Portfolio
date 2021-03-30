@@ -84,7 +84,19 @@ body {
 @media only screen and (max-width: 492px) {
   .nav-icon {
     position: absolute;
-    margin: 41px 0 0 400px !important;
+    margin: 41px 0 0 75% !important;
+  }
+}
+@media only screen and (max-width: 421px) {
+  .nav-icon {
+    position: absolute;
+    margin: 41px 0 0 75% !important;
+  }
+}
+@media only screen and (max-width: 357px) {
+  .nav-icon {
+    position: absolute;
+    margin: 41px 0 0 250px !important;
   }
 }
 

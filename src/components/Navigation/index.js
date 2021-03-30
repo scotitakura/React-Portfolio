@@ -5,11 +5,6 @@ import heroPoster from "../../assets/images/hero-poster.jpg"
 import Footer from "../Footer/index.js";
 import styled from "styled-components";
 
-// const SVideoContainer = styled.video`
-//   background-size: cover;
-//   position: relative;
-//   height: 300px;
-// `
 const SA = styled.div`
   position: fixed;
   background-color: white;
@@ -82,6 +77,21 @@ const SVideo = styled.video`
   @media (max-aspect-ratio: 202/135) {
     width: auto;
     height: 101%;
+  }
+  @media (max-aspect-ratio: 531/651) {
+    margin: 0 0 0 -10%;
+  }
+  @media (max-aspect-ratio: 550/651) {
+    margin: 0 0 0 -20%;
+  }
+  @media (max-aspect-ratio: 300/651) {
+    margin: 0 0 0 -30%;
+  }
+  @media (max-aspect-ratio: 414/736) {
+    margin: 0 0 0 -30%;
+  }
+  @media (max-aspect-ratio: 375/812) {
+    margin: 0 0 0 -50%;
   }
 `
 
