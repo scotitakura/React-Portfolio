@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-// import Footer from "../Footer/index.js";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 import styled from "styled-components";
@@ -30,6 +29,10 @@ const SSection = styled.section`
 const SDiv = styled.div`
   padding: 0 0 0 0;
 `;
+
+const SP = styled.p`
+  font-size: 17px;
+`
 
 const SColumn = styled.div`
   position: absolute;
@@ -88,6 +91,7 @@ function Contact() {
             className="btn-floating social github background-blue"
             href="https://github.com/scotitakura"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa fa-github background-blue"></i>
           </a>
@@ -97,11 +101,16 @@ function Contact() {
             className="btn-floating social linkedin background-blue"
             href="https://www.linkedin.com/in/scot-itakura-289376157/"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa fa-linkedin background-blue"></i>
           </a>
         </SDiv>
       </SColumn>
+      <div className="row">
+        <SP>Best Phone Number: (909) 684-1552</SP>
+        <SP>Email (this form emails to): scot.itakura@gmail.com</SP>
+      </div>
       <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <SLabel className="color-white">Name</SLabel>
