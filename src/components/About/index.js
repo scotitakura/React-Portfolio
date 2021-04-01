@@ -8,7 +8,7 @@ const STitle = styled.div`
   font-weight: bold;
   margin: -30px 0 0 0;
   text-align: left;
-`
+`;
 const SSection = styled.section`
   margin: -70vh 0 0 10%;
   width: 50%;
@@ -32,13 +32,13 @@ const SSection = styled.section`
   }
   @media (max-height: 350px) {
     margin-top: -40vh;
-    width: 80%
+    width: 80%;
   }
   @media (max-height: 300px) {
     margin-top: -35vh;
-    width: 80%
+    width: 80%;
   }
-`
+`;
 
 function About() {
   const currentCategory = {
@@ -51,15 +51,18 @@ function About() {
         <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
       </STitle>
       <p className="font-med">
-        Front-end web developer with a background in scientific data analytics and scientific coding 
-        programs as an Earth Science graduate from UC Santa Cruz. Recently certified 
-        through UC Berkeley’s Full-Stack Web Development program, employing my 
-        scientific program experience with MATLAB, Python, ArcGIS to become adept 
-        at web programs such as JavaScript, Node.js, React.js, etc. Successfully 
-        developed an interactive, responsive, and visually attractive web 
-        page for a business’s primary customer hub as a freelance web developer. 
-        Striving to create visually superb and enjoyably 
-        interactive web pages that are unique, memorable, and dependable.
+        Front-end web developer leveraging a background in geophysical data
+        analytics and scientific coding programs to design and create unique,
+        memorable, and dependable websites. From an Earth Science graduate from
+        UC Santa Cruz, to a certificated Full-Stack Web Developer from UC
+        Berkeley, my knowledge of analytical programs like MATLAB, Python, and
+        ArcGIS has accelerated my mastery of web development programs like
+        React.js, HTML, CSS, and JavaScript. As a freelance web developer, I
+        successfully created an interactive, responsive, and visually-attractive
+        web page to serve as the primary customer hub of a fledgling start-up. I
+        am enthusiastic to enhance the quality of web applications by employing
+        my web development experience, my analytical programming education, and
+        my passion to design, create, and innovate.
       </p>
       <div className="flex-row"></div>
     </SSection>
