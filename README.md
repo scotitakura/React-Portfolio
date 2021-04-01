@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![](src/assets/images/about-example3.PNG)
+![](src/assets/images/about-example.PNG)
 
 ## Purpose
 A portfolio webpage to display who I am, my accomplishments, my resume, and how to contact me.
