@@ -41,7 +41,7 @@ const SSection = styled.section`
 const SP = styled.p`
   font-size: 22px;
   font-weight: normal;
-`
+`;
 const SCard = styled.div`
   color: black;
   border-radius: 5px;
@@ -62,20 +62,20 @@ const SCard = styled.div`
 `;
 const SType = styled.p`
   width: 25%;
-  margin: 0 15% 0 15%;
+  margin: 0 15% 0 20%;
 
   @media (max-width: 768px) {
     width: 100%;
-    margin: -10px 0 0 0;
+    margin: 0 0 0 0;
   }
   @media (min-width: 1024px) {
     width: 35%;
-    margin: -10px 0 0 15%;
+    margin: 0 0 0 15%;
   }
 `;
 const SGithub = styled.div`
   width: 25%;
-  margin: 0 15% 0 0;
+  margin: 10px 15% 0 0;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -88,9 +88,12 @@ const SGithub = styled.div`
 `;
 
 const SVideo = styled.video`
-  width: 90%;
+  width: 80%;
   height: auto;
   opacity: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
   cursor: pointer;
 `;
 
@@ -99,6 +102,7 @@ function Portfolio() {
     name: "portfolio",
     description: "Portfolio page",
   };
+
   return (
     <SSection className="">
       <STitle>
@@ -121,7 +125,11 @@ function Portfolio() {
               </a>
             </SGithub>
           </div>
-          <a href="https://garage-collage-2468.herokuapp.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://garage-collage-2468.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SVideo poster={garagePoster} autoPlay muted loop>
               <source src={garagePreview} type="video/mp4" />
             </SVideo>
@@ -143,7 +151,11 @@ function Portfolio() {
               </a>
             </SGithub>
           </div>
-          <a href="https://qualitrees-503dd.web.app/" target="_blank" rel="noreferrer">
+          <a
+            href="https://qualitrees-503dd.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SVideo poster={qualitreesPoster} autoPlay muted loop>
               <source src={qualitreesPreview} type="video/mp4" />
             </SVideo>
@@ -165,7 +177,11 @@ function Portfolio() {
               </a>
             </SGithub>
           </div>
-          <a href="http://cosmopolitan-tastes.herokuapp.com/" target="_blank" rel="noreferrer">
+          <a
+            href="http://cosmopolitan-tastes.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <SVideo poster={cosmoPoster} autoPlay muted loop>
               <source src={cosmoPreview} type="video/mp4" />
             </SVideo>
