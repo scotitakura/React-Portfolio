@@ -86,6 +86,18 @@ const SGithub = styled.div`
     margin: 0 15% 0 0;
   }
 `;
+const SDescription = styled.div`
+  font-weight: normal;
+  margin-left: 10%;
+  margin-right: 10%;
+`;
+const SUL = styled.ul`
+margin-left: 10%;
+margin-right: 10%;
+`;
+const SLI = styled.li`
+  font-weight: normal;
+`;
 
 const SVideo = styled.video`
   width: 80%;
@@ -110,6 +122,57 @@ function Portfolio() {
         <SP>A collection of my past and current projects.</SP>
       </STitle>
       <div className="row">
+        <SCard className="col s12 m6">
+          <h3>Qualitrees</h3>
+          <div className="row">
+            <SType className="col">Freelance Project</SType>
+            <SGithub className="col">
+              <a
+                className="btn-floating social github background-blue"
+                href="https://github.com/scotitakura/QualiTrees"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa fa-github background-blue"></i>
+              </a>
+            </SGithub>
+          </div>
+          <a
+            href="https://qualitrees-503dd.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SVideo poster={qualitreesPoster} autoPlay muted loop>
+              <source src={qualitreesPreview} type="video/mp4" />
+            </SVideo>
+          </a>
+          <SDescription>
+            An corporations application to show potential clients an overview of
+            the company of QualiTrees. This platform is the companies business
+            card, allowing users to learn more about QualiTrees and why it is a
+            successful and reliable business for everyday cannabis use. Website
+            link&nbsp;
+            <a
+              href="https://qualitrees-503dd.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </SDescription>
+          <SUL>
+            Built with:
+            <SLI>React</SLI>
+            <SLI>JavaScript</SLI>
+            <SLI>CSS</SLI>
+            <SLI>Node.js</SLI>
+            <SLI>Styled Components</SLI>
+            <SLI>Materialize</SLI>
+            <SLI>Deployed with Google Firebase</SLI>
+          </SUL>
+        </SCard>
+        
         <SCard className="col">
           <h3>Garage Collage</h3>
           <div className="row">
@@ -134,33 +197,37 @@ function Portfolio() {
               <source src={garagePreview} type="video/mp4" />
             </SVideo>
           </a>
+          <SDescription>
+            An e-commerce application catering to the needs of a recent/frequent
+            mover looking to buy/sell lightly used goods at a bargin. This
+            platform is a virtual garage sale, allowing users from al over the
+            capability to purchase and purge on a world-wide scale. Website
+            link&nbsp;
+            <a
+              href="https://garage-collage-2468.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </SDescription>
+          <SUL>
+            Built with:
+            <SLI>React</SLI>
+            <SLI>JavaScript</SLI>
+            <SLI>CSS</SLI>
+            <SLI>Styled Components</SLI>
+            <SLI>Apollo</SLI>
+            <SLI>GraphQL</SLI>
+            <SLI>Node.js</SLI>
+            <SLI>NoSQL - MongoDB</SLI>
+            <SLI>Mongoose</SLI>
+            <SLI>Concurrently</SLI>
+            <SLI>Deployed with Heroku</SLI>
+          </SUL>
         </SCard>
 
-        <SCard className="col s12 m6">
-          <h3>Qualitrees</h3>
-          <div className="row">
-            <SType className="col">Freelance Project</SType>
-            <SGithub className="col">
-              <a
-                className="btn-floating social github background-blue"
-                href="https://github.com/scotitakura/QualiTreesWeb"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa fa-github background-blue"></i>
-              </a>
-            </SGithub>
-          </div>
-          <a
-            href="https://qualitrees-503dd.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SVideo poster={qualitreesPoster} autoPlay muted loop>
-              <source src={qualitreesPreview} type="video/mp4" />
-            </SVideo>
-          </a>
-        </SCard>
 
         <SCard className="col s12 m6">
           <h3>Cosmopolitan Tastes</h3>
@@ -186,6 +253,33 @@ function Portfolio() {
               <source src={cosmoPreview} type="video/mp4" />
             </SVideo>
           </a>
+          <SDescription>
+            The Craver is a simple search application using restful API's to
+            help you decide what to eat. If you know what you want to eat, but
+            are unsure if you want to cook or dine out, the craver will give you
+            an assortment of recipes and nearby restaurants to satisfy your
+            craving. This app is fully responsive to all screentypes and
+            displays the lists on a clean colapsible style list. It has a
+            polished look for the landing page and makes deciding what to have
+            for dinner easy! Website link&nbsp;
+            <a
+              href="http://cosmopolitan-tastes.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </SDescription>
+          <SUL>
+            Built with:
+            <SLI>JavaScript</SLI>
+            <SLI>CSS</SLI>
+            <SLI>Node.js</SLI>
+            <SLI>Express.js</SLI>
+            <SLI>MySQL</SLI>
+            <SLI>Deployed with Heroku</SLI>
+          </SUL>
         </SCard>
 
         <SCard className="col s12 m6">
@@ -212,6 +306,27 @@ function Portfolio() {
               <source src={cravePreview} type="video/mp4" />
             </SVideo>
           </a>
+          <SDescription>
+            Create, Find, Share and Vote on your best recipes with the world
+            with Cosmopolitan Tastes! This social platform lets recipe
+            enthusiasts easily give or recieve feedback, find and replicate
+            recipes, and post their cooking trade secrets! Website link&nbsp;
+            <a
+              href="https://ngdino.github.io/fun-challenge-project/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </SDescription>
+          <SUL>
+            Built with:
+            <SLI>JavaScript</SLI>
+            <SLI>CSS</SLI>
+            <SLI>Node.js</SLI>
+            <SLI>Deployed with GitHub</SLI>
+          </SUL>
         </SCard>
       </div>
     </SSection>
