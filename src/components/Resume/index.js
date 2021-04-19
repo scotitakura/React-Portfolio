@@ -4,65 +4,48 @@ import styled from "styled-components";
 import resume from "../../assets/images/Scot-Itakura's-Resume.pdf";
 
 const STitle = styled.div`
-  width: 400px;
+  width: 90%;
   font-size: 20px;
   font-weight: bold;
-  margin: -30px 0 0 0;
+  margin: -30px 0 0 -4%;
   text-align: left;
-`
+`;
+
+const SA = styled.a`
+  position: absolute;
+  margin-right: 10px !important;
+`;
 
 const SSection = styled.section`
-margin: -70vh 0 0 8%;
-position: absolute;
-padding: 5px 30px 5px 30px;
-@media (max-width: 700px) {
-  width: 70%;
-}
-@media (max-width: 530px) {
-  margin: -60vh 0 0 20px;
-  width: 70%;
-}
-@media (max-height: 500px) {
-  margin-top: -55vh;
-}
-@media (max-height: 450px) {
-  margin-top: -50vh;
-}
-@media (max-height: 400px) {
-  margin-top: -45vh;
-}
-@media (max-height: 350px) {
-  margin-top: -40vh;
-  width: 80%
-}
-@media (max-height: 300px) {
-  margin-top: -35vh;
-  width: 80%
-}
-  // @media (max-height: 650px) {
-  //   margin-top: -70vh;
+  margin: -69.5vh 0 0 9%;
+  position: absolute;
+  @media (max-aspect-ratio: 202/135) {
+    width: 85%;
+  }
+  // @media (max-width: 700px) {
+  //   width: 70%;
   // }
-  // @media (max-height: 600px) {
-  //   margin-top: -65vh;
-  // }
-  // @media (max-height: 550px) {
-  //   margin-top: -60vh;
-  // }
-  // @media (max-height: 500px) {
-  //   margin-top: -55vh;
-  // }
-  // @media (max-height: 450px) {
-  //   margin-top: -50vh;
-  // }
-  // @media (max-height: 400px) {
-  //   margin-top: -45vh;
-  // }
-  // @media (max-height: 350px) {
-  //   margin-top: -40vh;
-  // }
-  // @media (max-height: 300px) {
-  //   margin-top: -35vh;
-  // }
+  @media (max-width: 492px) {
+    margin-top: -60vh;
+  }
+  @media (max-height: 550px) {
+    margin-top: -65vh;
+  }
+  @media (max-height: 500px) {
+    margin-top: -60vh;
+  }
+  @media (max-height: 450px) {
+    margin-top: -55vh;
+  }
+  @media (max-height: 400px) {
+    margin-top: -50vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -45vh;
+  }
+  @media (max-height: 300px) {
+    margin-top: -35vh;
+  }
 `;
 
 const SLi = styled.li`
@@ -79,19 +62,25 @@ function Resume() {
     <SSection className="container">
       <STitle className="row">
         <h1 className="col">{capitalizeFirstLetter(currentCategory.name)}</h1>
-        <a className="col s1" href={resume} target="_blank" rel="noreferrer">
+        <SA className="col s1" href={resume} target="_blank" rel="noreferrer">
           <i class="material-icons">picture_as_pdf</i>
-        </a>
+        </SA>
       </STitle>
       <div>
         <h4>Work Experience</h4>
         <div className="indent">
           <div className="row">
-            <h5 className="col s9">Comunity Integration Assistant</h5>
+            <h5 className="col s9">
+              Information Technology Coordinator/Assistant Instructor
+            </h5>
             <div className="col s3">
               <p className="right-align">(2020-Present)</p>
             </div>
             <SI className="col s12">Ability Now Bay Area | Oakland, CA</SI>
+            <SLi className="col s12">
+              IT Coordinator to help everyday computer, internet, hardware,
+              software, and Zoom needs and education for the entire center
+            </SLi>
             <SLi className="col s12">
               Educate and empower adults with disabilities and their families
               through advocacy, wellness, and building independence over online

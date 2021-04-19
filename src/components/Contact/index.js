@@ -7,8 +7,11 @@ import styled from "styled-components";
 init("user_1TsQ5BV4LDT1zGE1UQFcc");
 
 const SSection = styled.section`
-  margin: -74vh 0 0 10%;
+  margin: -74vh 0 5% 10%;
   width: 50%;
+  @media (max-aspect-ratio: 202/135) {
+    width: 85%;
+  }
   @media (max-height: 500px) {
     margin-top: -70vh;
   }
@@ -27,7 +30,10 @@ const SSection = styled.section`
 `;
 
 const SDiv = styled.div`
-  padding: 0 0 0 0;
+  padding: 0;
+  @media (max-width: 514px) {
+    padding: 0 .75rem 1.5rem  0.75rem !important;
+  }
 `;
 
 const SP = styled.p`
@@ -37,10 +43,10 @@ const SP = styled.p`
 const SColumn = styled.div`
   position: absolute;
   margin: -73px 0 0 110px;
-  @media (max-width: 640px) {
+  @media (max-width: 377px) {
     margin: -73px 0 0 110px;
   }
-  @media (min-width: 640px) {
+  @media (min-width: 377px) {
     margin: -73px 0 0 340px;
   }
   @media (min-width: 768px) {

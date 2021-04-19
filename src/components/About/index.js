@@ -3,23 +3,26 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
 const STitle = styled.div`
-  width: 400px;
+  width: 100%;
   font-size: 20px;
   font-weight: bold;
   margin: -30px 0 0 0;
   text-align: left;
 `;
 const SSection = styled.section`
-  margin: -70vh 0 0 10%;
+  margin: -70vh 0 0 8%;
   width: 50%;
   position: absolute;
   padding: 5px 30px 5px 30px;
+  @media (max-aspect-ratio: 202/135) {
+    width: 90vw;
+  }
   @media (max-width: 700px) {
     width: 70%;
   }
-  @media (max-width: 530px) {
+  @media (max-width: 492px) {
     margin: -60vh 0 0 20px;
-    width: 100%;
+    width: 90%;
   }
   @media (max-height: 500px) {
     margin-top: -55vh;

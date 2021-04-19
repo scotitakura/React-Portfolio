@@ -12,30 +12,47 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 import styled from "styled-components";
 
 const STitle = styled.div`
-  width: 400px;
+  width: 100%;
   font-size: 20px;
   font-weight: bold;
-  margin: 27px 0 0 5%;
-  padding: 15px 25px 15px 25px;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+  @media (min-aspect-ratio: 202/135) {
+    width: 70% !important;
+  }
   text-align: center;
   z-index: -3;
 `;
 const SSection = styled.section`
-  margin-top: -80vh;
-  @media (max-height: 500px) {
-    margin-top: -70vh;
+  margin: -70vh 0 0 0;
+  position: absolute;
+
+  @media (max-width: 700px) {
+    width: 100%;
   }
-  @media (max-height: 450px) {
-    margin-top: -65vh;
+  @media (max-aspect-ratio: 202/135) {
+    margin: -70vh 0 0 0;
   }
-  @media (max-height: 400px) {
+  @media (max-height: 550px) {
     margin-top: -60vh;
   }
-  @media (max-height: 350px) {
+  @media (max-height: 500px) {
     margin-top: -55vh;
   }
-  @media (max-height: 300px) {
+  @media (max-height: 450px) {
     margin-top: -50vh;
+  }
+  @media (max-height: 400px) {
+    margin-top: -45vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -40vh;
+  }
+  @media (max-height: 300px) {
+    margin-top: -35vh;
   }
 `;
 const SP = styled.p`
@@ -45,18 +62,17 @@ const SP = styled.p`
 const SCard = styled.div`
   color: black;
   border-radius: 5px;
-  width: 44% !important;
+  width: 50% !important;
   font-size: 20px;
   font-weight: bold;
-  margin: 40px 40px 0 0;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 25px;
   text-align: center;
   z-index: -1;
 
   @media (max-width: 768px) {
-    width: 76% !important;
+    width: 100% !important;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 990px) {
     width: 35% !important;
   }
 `;
@@ -92,8 +108,8 @@ const SDescription = styled.div`
   margin-right: 10%;
 `;
 const SUL = styled.ul`
-margin-left: 10%;
-margin-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 `;
 const SLI = styled.li`
   font-weight: normal;

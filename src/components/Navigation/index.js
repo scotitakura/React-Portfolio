@@ -67,32 +67,41 @@ const SContainer = styled.header`
 `
 const SVideo = styled.video`
   position: fixed;
+  top: -60px;
+  left: 0;
   z-index: -3;
-  width: 101%;
-  height: auto;
+  width: 105vw;
   @media (min-aspect-ratio: 202/135) {
-    width: 101%;
+    width: 115vw;
     height: auto;
   }
   @media (max-aspect-ratio: 202/135) {
+    top: -60px;
     width: auto;
-    height: 101%;
+    height: 170vh;
+    min-width: 101vw;
   }
-  @media (max-aspect-ratio: 531/651) {
-    margin: 0 0 0 -10%;
+  @media (max-aspect-ratio: 1075/851) {
+    top: -100px;
+    left -200px;
   }
-  @media (max-aspect-ratio: 550/651) {
-    margin: 0 0 0 -20%;
-  }
-  @media (max-aspect-ratio: 300/651) {
-    margin: 0 0 0 -30%;
-  }
-  @media (max-aspect-ratio: 414/736) {
-    margin: 0 0 0 -30%;
-  }
-  @media (max-aspect-ratio: 375/812) {
-    margin: 0 0 0 -50%;
-  }
+  // @media (max-aspect-ratio: 531/651) {
+  //   // margin: 0 0 0 70%;
+  // }
+  // @media (max-aspect-ratio: 550/651) {
+  //   // margin: 0 0 0 80%;
+  // }
+  // @media (max-aspect-ratio: 300/651) {
+  //   // margin: 0 0 0 70%;
+  // }
+  // @media (max-aspect-ratio: 414/736) {
+  //   // margin: 0 0 0 90%;
+  //   height: 200vh;
+  // }
+  // @media (max-aspect-ratio: 375/812) {
+  //   // margin: 0 0 0 90%;
+  //   height: 200vh;
+  // }
 `
 
 function Navigation(props) {
