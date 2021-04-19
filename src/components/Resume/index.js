@@ -28,23 +28,35 @@ const SSection = styled.section`
   @media (max-width: 492px) {
     margin-top: -60vh;
   }
-  @media (max-height: 550px) {
+  @media (max-height: 900px) {
+    margin-top: -70vh;
+  }
+  @media (max-height: 800px) {
     margin-top: -65vh;
   }
-  @media (max-height: 500px) {
+  @media (max-height: 700px) {
     margin-top: -60vh;
   }
-  @media (max-height: 450px) {
+  @media (max-height: 600px) {
     margin-top: -55vh;
   }
-  @media (max-height: 400px) {
+  @media (max-height: 550px) {
     margin-top: -50vh;
   }
-  @media (max-height: 350px) {
+  @media (max-height: 500px) {
     margin-top: -45vh;
   }
-  @media (max-height: 300px) {
+  @media (max-height: 450px) {
+    margin-top: -40vh;
+  }
+  @media (max-height: 400px) {
     margin-top: -35vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -30vh;
+  }
+  @media (max-height: 300px) {
+    margin-top: -25vh;
   }
 `;
 

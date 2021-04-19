@@ -10,31 +10,42 @@ import cravePoster from "../../assets/images/The-Craver-Poster.jpg";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 import styled from "styled-components";
-
 const STitle = styled.div`
   width: 100%;
   font-size: 20px;
   font-weight: bold;
   padding: 0 20px;
-
-  @media (max-width: 768px) {
-    width: 100% !important;
-  }
-  @media (min-aspect-ratio: 202/135) {
-    width: 70% !important;
-  }
   text-align: center;
   z-index: -3;
+
+  @media (min-width: 768px) {
+    width: 100% !important;
+  }
+  @media (min-aspect-ratio: 513/490) {
+    width: 70% !important;
+  }
 `;
 const SSection = styled.section`
   margin: -70vh 0 0 0;
   position: absolute;
 
-  @media (max-width: 700px) {
+  @media (max-aspect-ratio: 513/490) {
     width: 100%;
   }
-  @media (max-aspect-ratio: 202/135) {
+  @media (min-aspect-ratio: 202/135) {
     margin: -70vh 0 0 0;
+  }
+  @media (max-height: 900px) {
+    margin-top: -75vh;
+  }
+  @media (max-height: 800px) {
+    margin-top: -70vh;
+  }
+  @media (max-height: 700px) {
+    margin-top: -65vh;
+  }
+  @media (max-height: 600px) {
+    margin-top: -60vh;
   }
   @media (max-height: 550px) {
     margin-top: -60vh;
@@ -72,10 +83,87 @@ const SCard = styled.div`
   @media (max-width: 768px) {
     width: 100% !important;
   }
-  @media (min-width: 990px) {
+  @media (min-aspect-ratio: 513/490) {
     width: 35% !important;
   }
 `;
+// const STitle = styled.div`
+//   width: 100%;
+//   font-size: 20px;
+//   font-weight: bold;
+//   padding: 0 20px;
+
+//   @media (max-width: 768px) {
+//     width: 100% !important;
+//   }
+//   @media (min-aspect-ratio: 202/135) {
+//     width: 70% !important;
+//   }
+//   text-align: center;
+//   z-index: -3;
+// `;
+// const SSection = styled.section`
+//   margin: -70vh 0 0 0;
+//   position: absolute;
+
+//   @media (max-width: 700px) {
+//     width: 100%;
+//   }
+//   @media (max-aspect-ratio: 202/135) {
+//     margin: -70vh 0 0 0;
+//   }
+//   @media (max-height: 900px) {
+//     margin-top: -75vh;
+//   }
+//   @media (max-height: 800px) {
+//     margin-top: -70vh;
+//   }
+//   @media (max-height: 700px) {
+//     margin-top: -65vh;
+//   }
+//   @media (max-height: 600px) {
+//     margin-top: -60vh;
+//   }
+//   @media (max-height: 550px) {
+//     margin-top: -60vh;
+//   }
+//   @media (max-height: 500px) {
+//     margin-top: -55vh;
+//   }
+//   @media (max-height: 450px) {
+//     margin-top: -50vh;
+//   }
+//   @media (max-height: 400px) {
+//     margin-top: -45vh;
+//   }
+//   @media (max-height: 350px) {
+//     margin-top: -40vh;
+//   }
+//   @media (max-height: 300px) {
+//     margin-top: -35vh;
+//   }
+// `;
+// const SP = styled.p`
+//   font-size: 22px;
+//   font-weight: normal;
+// `;
+// const SCard = styled.div`
+//   color: black;
+//   border-radius: 5px;
+//   width: 50% !important;
+//   font-size: 20px;
+//   font-weight: bold;
+//   padding: 15px 25px;
+//   text-align: center;
+//   z-index: -1;
+
+//   @media (max-width: 768px) {
+//     width: 100% !important;
+//   }
+//   @media (min-aspect-ratio: 202/135) {
+//     width: 35% !important;
+//   }
+// `;
 const SType = styled.p`
   width: 25%;
   margin: 0 15% 0 20%;

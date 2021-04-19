@@ -10,22 +10,34 @@ const SSection = styled.section`
   margin: -74vh 0 5% 10%;
   width: 50%;
   @media (max-aspect-ratio: 202/135) {
-    width: 85%;
+    width: 80%;
   }
-  @media (max-height: 500px) {
+  @media (max-height: 900px) {
+    margin-top: -75vh;
+  }
+  @media (max-height: 800px) {
     margin-top: -70vh;
   }
-  @media (max-height: 450px) {
+  @media (max-height: 700px) {
     margin-top: -65vh;
   }
-  @media (max-height: 400px) {
+  @media (max-height: 600px) {
     margin-top: -60vh;
   }
-  @media (max-height: 350px) {
+  @media (max-height: 500px) {
     margin-top: -55vh;
   }
-  @media (max-height: 300px) {
+  @media (max-height: 450px) {
     margin-top: -50vh;
+  }
+  @media (max-height: 400px) {
+    margin-top: -45vh;
+  }
+  @media (max-height: 350px) {
+    margin-top: -40vh;
+  }
+  @media (max-height: 300px) {
+    margin-top: -35vh;
   }
 `;
 
@@ -43,10 +55,10 @@ const SP = styled.p`
 const SColumn = styled.div`
   position: absolute;
   margin: -73px 0 0 110px;
-  @media (max-width: 377px) {
+  @media (max-width: 401px) {
     margin: -73px 0 0 110px;
   }
-  @media (min-width: 377px) {
+  @media (min-width: 401px) {
     margin: -73px 0 0 340px;
   }
   @media (min-width: 768px) {

@@ -6,7 +6,6 @@ import Footer from "../Footer/index.js";
 import styled from "styled-components";
 
 const SA = styled.div`
-  position: fixed;
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -18,6 +17,10 @@ const SA = styled.div`
   position: absolute;
   mix-blend-mode: screen;
   z-index: -1;
+  @media (max-width: 339px) {
+    margin: 40px 10%;
+    font-size: 18vw;
+  }
 `
 const SLi = styled.li`
   background-color: white;
@@ -42,6 +45,9 @@ const SMLi = styled.li`
 const SAIcon = styled.a`
   padding: 15px 10px 15px 10px !important;
   height: auto !important;
+  @media (max-width: 339px) {
+    margin: 41px 10% 40px 70% !important;
+  }
 `
 const SNav = styled.nav`
   background-color: transparent;
@@ -67,7 +73,7 @@ const SContainer = styled.header`
 `
 const SVideo = styled.video`
   position: fixed;
-  top: -60px;
+  top: -80px;
   left: 0;
   z-index: -3;
   width: 105vw;
@@ -76,32 +82,38 @@ const SVideo = styled.video`
     height: auto;
   }
   @media (max-aspect-ratio: 202/135) {
-    top: -60px;
+    top: -10px !important;
     width: auto;
-    height: 170vh;
+    height: 105vh;
     min-width: 101vw;
   }
   @media (max-aspect-ratio: 1075/851) {
     top: -100px;
-    left -200px;
+    left -125px;
   }
-  // @media (max-aspect-ratio: 531/651) {
-  //   // margin: 0 0 0 70%;
+  @media (min-aspect-ratio: 1075/851) {
+    top: -100px;
+    left -50px;
+  }
+  // @media (min-aspect-ratio: 453/661) {
+  //   top: -100px;
+  //   left -50px;
   // }
-  // @media (max-aspect-ratio: 550/651) {
-  //   // margin: 0 0 0 80%;
-  // }
-  // @media (max-aspect-ratio: 300/651) {
-  //   // margin: 0 0 0 70%;
-  // }
-  // @media (max-aspect-ratio: 414/736) {
-  //   // margin: 0 0 0 90%;
-  //   height: 200vh;
-  // }
-  // @media (max-aspect-ratio: 375/812) {
-  //   // margin: 0 0 0 90%;
-  //   height: 200vh;
-  // }
+  @media (max-aspect-ratio: 513/490) {
+    height: 150vh;
+    top: -150px !important;
+    left -130px !important;
+  }
+  @media (max-aspect-ratio: 513/600) {
+    height: 115vh;
+    top: -40px !important;
+    left -130px !important;
+  }
+  @media (max-aspect-ratio: 350/600) {
+    height: 115vh;
+    top: -40px !important;
+    left -190px !important;
+  }
 `
 
 function Navigation(props) {

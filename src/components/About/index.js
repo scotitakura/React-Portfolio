@@ -24,6 +24,18 @@ const SSection = styled.section`
     margin: -60vh 0 0 20px;
     width: 90%;
   }
+  @media (max-height: 900px) {
+    margin-top: -75vh;
+  }
+  @media (max-height: 800px) {
+    margin-top: -70vh;
+  }
+  @media (max-height: 700px) {
+    margin-top: -65vh;
+  }
+  @media (max-height: 600px) {
+    margin-top: -60vh;
+  }
   @media (max-height: 500px) {
     margin-top: -55vh;
   }
