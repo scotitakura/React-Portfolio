@@ -73,7 +73,6 @@ const SContainer = styled.header`
 `
 const SVideo = styled.video`
   position: fixed;
-  top: -80px;
   left: 0;
   z-index: -3;
   width: 105vw;
@@ -82,23 +81,18 @@ const SVideo = styled.video`
     height: auto;
   }
   @media (max-aspect-ratio: 202/135) {
-    top: -10px !important;
+    top: -100px !important;
     width: auto;
-    height: 105vh;
+    height: 110vh;
     min-width: 101vw;
   }
   @media (max-aspect-ratio: 1075/851) {
-    top: -100px;
-    left -125px;
+    top: -180px;
+    left -260px;
   }
   @media (min-aspect-ratio: 1075/851) {
-    top: -100px;
     left -50px;
   }
-  // @media (min-aspect-ratio: 453/661) {
-  //   top: -100px;
-  //   left -50px;
-  // }
   @media (max-aspect-ratio: 513/490) {
     height: 150vh;
     top: -150px !important;
@@ -112,7 +106,7 @@ const SVideo = styled.video`
   @media (max-aspect-ratio: 350/600) {
     height: 115vh;
     top: -40px !important;
-    left -190px !important;
+    left -250px !important;
   }
 `
 

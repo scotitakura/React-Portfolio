@@ -82,6 +82,18 @@ function Resume() {
         <h4>Work Experience</h4>
         <div className="indent">
           <div className="row">
+            <h5 className="col s9">Freelance Web Developer</h5>
+            <div className="col s3">
+              <p className="right-align">(Present)</p>
+            </div>
+            <SI className="col s12">Self-employed | Oakland, CA</SI>
+            <SLi className="col s12">
+              Spend spare time aside as a freelancing web developer working on client
+              projects to gain experience, refine my web dev skills, and give
+              expectation-exceeding websites to clients.
+            </SLi>
+          </div>
+          <div className="row">
             <h5 className="col s9">
               Information Technology Coordinator/Assistant Instructor
             </h5>
@@ -91,7 +103,7 @@ function Resume() {
             <SI className="col s12">Ability Now Bay Area | Oakland, CA</SI>
             <SLi className="col s12">
               IT Coordinator to help everyday computer, internet, hardware,
-              software, and Zoom needs and education for the entire center
+              software, and Zoom needs and education for the entire center.
             </SLi>
             <SLi className="col s12">
               Educate and empower adults with disabilities and their families
