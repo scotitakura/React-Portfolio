@@ -81,7 +81,7 @@ const SVideo = styled.video`
     height: auto;
   }
   @media (max-aspect-ratio: 202/135) {
-    top: -100px !important;
+    top: -50px !important;
     width: auto;
     height: 110vh;
     min-width: 101vw;
@@ -139,7 +139,7 @@ function Navigation(props) {
         </ul>
       </SNav>
       <SContainer>
-        <SVideo poster={heroPoster} autoPlay muted loop>
+        <SVideo poster={heroPoster} muted autoPlay loop>
           <source src={heroVideo} type="video/mp4"/>
         </SVideo>
       </SContainer>
