@@ -95,7 +95,7 @@ function Resume() {
           </div>
           <div className="row">
             <h5 className="col s9">
-              Information Technology Coordinator/Assistant Instructor
+              Information Technology Coordinator/Program Instructor
             </h5>
             <div className="col s3">
               <p className="right-align">(2020-Present)</p>
